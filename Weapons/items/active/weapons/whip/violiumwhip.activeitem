@@ -42,7 +42,7 @@
 
   "chain" : {
     "startOffset" : [0.625, 0],
-    "length" : [2, 27],
+    "length" : [2, 17],
     "segmentImage" : "/items/active/weapons/whip/violiumwhiplink.png",
     "endSegmentImage" : "/items/active/weapons/whip/violiumwhipend.png",
     "segmentSize" : 0.375,
