@@ -27,7 +27,7 @@
             "idle" : {},
             "windup" : {
               "frames" : 3,
-              "cycle" : 0.1,
+              "cycle" : 0.15,
               "mode" : "end"
             },
             "extend" : {
@@ -60,7 +60,7 @@
 
   "elementalType" : "electric",
 
-  "primaryAbilityType" : "whipcrack",
+  "primaryAbilityType" : "fasterwhipcrack",
   "primaryAbility" : {
     "fireTime" : 0.5,
     "chainDps" : 1.5,
