@@ -1,0 +1,59 @@
+{
+  "itemName" : "violiumwhip",
+  "price" : 1000,
+  "level" : 5,
+  "maxStack" : 1,
+  "rarity" : "Rare",
+  "description" : "A light-weight whip of energy.
+^cyan;Electrifies foes^reset;",
+  "shortdescription" : "Violium Whip",
+  "tooltipKind" : "sword2",
+  "category" : "whip",
+  "twoHanded" : false,
+  "itemTags" : ["weapon","whip","upgradeableWeapon","violium","energy"],
+
+  "inventoryIcon" : "violiumwhip.png:idle",
+  "animation" : "fasterwhip.animation",
+  "animationParts" : {
+    "weapon" : "violiumwhip.png",
+	"weaponFullbright" : "violiumwhipfullbright.png"
+  },
+  "animationCustom" : {
+    "particleEmitters" : { "crack" : { "particles" : [ ]}},
+    "sounds" : {
+      "swing" : [ "/sfx/melee/energywhip_swing1.ogg", "/sfx/melee/energywhip_swing2.ogg", "/sfx/melee/energywhip_swing3.ogg" ],
+      "crack" : [ "/sfx/melee/energywhip_impact1.ogg", "/sfx/melee/energywhip_impact2.ogg", "/sfx/melee/energywhip_impact3.ogg" ]
+    }
+  },
+
+  "chain" : {
+    "startOffset" : [0.625, 0],
+    "length" : [2, 15],
+    "segmentImage" : "/items/active/weapons/whip/violiumwhiplink.png",
+    "endSegmentImage" : "/items/active/weapons/whip/violiumwhipend.png",
+    "segmentSize" : 0.375,
+    "fullbright" : true
+  },
+
+  "scripts" : [ "whip.lua" ],
+
+  "elementalType" : "electric",
+
+  "primaryAbilityType" : "whipcrack",
+  "primaryAbility" : {
+    "fireTime" : 0.5,
+    "chainDps" : 1.5,
+    "crackDps" : 5.0,
+
+    "damageConfig" : {
+      "damageSourceKind" : "electriclash",
+      "statusEffects" : [ "electrified" ]
+    },
+
+    "projectileType" : "whipcrackelectric"
+  },
+
+  "critChance" : 1.25,
+  "critBonus" : 10,
+  "builder" : "/items/buildscripts/buildwhip.lua"
+}
