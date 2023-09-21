@@ -7,7 +7,7 @@
           "idle" : {},
           "windup" : {
             "frames" : 3,
-            "cycle" : 0.03,
+            "cycle" : 0.01,
             "mode" : "end"
           },
           "extend" : {
@@ -102,6 +102,7 @@
   },
   "sounds" : {
     "swing" : [ ],
-    "crack" : [ ]
+    "crack" : [ ],
+    "crit" : [ "/sfx/melee/axe_kill_organic2.ogg" ]
   }
 }

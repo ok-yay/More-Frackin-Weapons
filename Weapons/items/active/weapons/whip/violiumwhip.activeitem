@@ -16,7 +16,7 @@
   "animation" : "fasterwhip.animation",
   "animationParts" : {
     "weapon" : "violiumwhip.png",
-	"weaponFullbright" : "violiumwhipfullbright.png"
+	  "weaponFullbright" : "violiumwhipfullbright.png"
   },
   "animationCustom" : {
     "particleEmitters" : { "crack" : { "particles" : [ ]}},
