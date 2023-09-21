@@ -24,18 +24,11 @@
         "attack" : {
           "default" : "idle",
           "states" : {
-            "idle" : {},
             "windup" : {
               "frames" : 3,
-              "cycle" : 0.15,
+              "cycle" : 0.1,
               "mode" : "end"
-            },
-            "extend" : {
-              "frames" : 1,
-              "cycle" : 0.01,
-              "mode" : "end"
-            },
-            "fire" : {}
+            }
           }
         }
       }
@@ -49,7 +42,7 @@
 
   "chain" : {
     "startOffset" : [0.625, 0],
-    "length" : [2, 15],
+    "length" : [2, 18],
     "segmentImage" : "/items/active/weapons/whip/violiumwhiplink.png",
     "endSegmentImage" : "/items/active/weapons/whip/violiumwhipend.png",
     "segmentSize" : 0.375,
@@ -60,7 +53,7 @@
 
   "elementalType" : "electric",
 
-  "primaryAbilityType" : "fasterwhipcrack",
+  "primaryAbilityType" : "whipcrack",
   "primaryAbility" : {
     "fireTime" : 0.5,
     "chainDps" : 1.5,
@@ -69,6 +62,18 @@
     "damageConfig" : {
       "damageSourceKind" : "electriclash",
       "statusEffects" : [ "electrified" ]
+    },
+    "stances" : {
+      "windup" : {
+        "duration" : 0.1,
+        "armRotation" : 100,
+        "weaponRotation" : 0,
+        "weaponRotationCenter" : [0.0, 0.0],
+        "weaponOffset" : [-1.3, 0.625],
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      }
     },
 
     "projectileType" : "whipcrackelectric"
