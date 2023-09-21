@@ -26,7 +26,7 @@
           "states" : {
             "idle" : {},
             "windup" : {
-              "frames" : 1,
+              "frames" : 3,
               "cycle" : 0.1,
               "mode" : "end"
             },
