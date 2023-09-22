@@ -2,7 +2,7 @@
   "name": "jankyjank",
   "defaultDuration": 0,
   "scripts": [
-    "jank.lua"
+    "jankyjank.lua"
   ],
   "label": " ",
   "icon": "/interface/statuses/scripix.png"
