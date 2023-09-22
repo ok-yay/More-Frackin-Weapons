@@ -1,0 +1,9 @@
+{
+  "name": "jankyjank",
+  "defaultDuration": 0,
+  "scripts": [
+    "jank.lua"
+  ],
+  "label": " ",
+  "icon": "/interface/statuses/scripix.png"
+}

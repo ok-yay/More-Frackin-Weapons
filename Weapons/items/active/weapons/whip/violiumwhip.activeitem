@@ -61,7 +61,7 @@
 
     "damageConfig" : {
       "damageSourceKind" : "electriclash",
-      "statusEffects" : [ "electrified","electricvulnerability" ]
+      "statusEffects" : [ "electrified","jankyjank" ]
     },
     "stances" : {
       "windup" : {
