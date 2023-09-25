@@ -9,17 +9,25 @@
   "tooltipKind" : "fistweapon",
   "category" : "fistWeapon",
   "twoHanded" : false,
-  "itemTags" : ["weapon"],
+  "itemTags" : ["weapon","fist","energy","upgradeableWeapon","violium"],
 
   "inventoryIcon" : "violiumclaw.png:front",
-  "animation" : "fistweapon.animation",
+  "animation" : "fistweaponglow.animation",
   "animationParts" : {
     "weapon" : "violiumclaw.png",
+    "weaponfullbright" : "violiumclawfullbright.png",
     "swoosh" : "swoosh/clawswoosh.png"
   },
   "animationCustom" : {
     "sounds" : {
       "fire" : [ "/sfx/melee/swing_dagger.ogg" ]
+    },
+    "lights" : {
+      "glow" : {
+        "position" : [0, 2.0],
+        "color" : [90, 50, 120],
+        "transformationGroups" : ["weapon"]
+      }
     }
   },
   
