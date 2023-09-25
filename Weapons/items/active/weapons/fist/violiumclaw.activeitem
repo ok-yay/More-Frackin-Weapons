@@ -31,10 +31,7 @@
   "comboSteps" : 7,
   "comboTiming" : [0.1, 0.3],
   "comboCooldown" : 0.1,
-  "comboFinisherSource" : "/items/active/weapons/fist/combofinishers/thunderpunch.combofinisher",
-  "comboFinisher" : {
-    "freezeTime" : 0.0
-  },
+  "comboFinisherSource" : "/items/active/weapons/fist/combofinishers/nofreezethunderpunch.combofinisher",
   "freezeLimit" : 0,
 
   "primaryAbility" : {
