@@ -11,7 +11,7 @@
   "twoHanded" : false,
   "itemTags" : ["weapon"],
 
-  "inventoryIcon" : "violium.png:front",
+  "inventoryIcon" : "violiumclaw.png:front",
   "animation" : "fistweapon.animation",
   "animationParts" : {
     "weapon" : "violiumclaw.png",
