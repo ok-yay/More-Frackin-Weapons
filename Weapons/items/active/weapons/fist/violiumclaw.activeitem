@@ -30,7 +30,7 @@
   "comboSteps" : 7,
   "comboTiming" : [0.1, 0.3],
   "comboCooldown" : 0.1,
-  "comboFinisherSource" : "/items/active/weapons/fist/combofinishers/megadashslash.combofinisher",
+  "comboFinisherSource" : "/items/active/weapons/fist/combofinishers/thunderpunch.combofinisher",
 
   "freezeLimit" : 0,
 
