@@ -41,7 +41,7 @@
     "scripts" : ["/items/active/weapons/fist/punch.lua"],
     "class" : "Punch",
 
-    "freezeTime" : 0.15,
+    "freezeTime" : 0.0,
     "fireTime" : 0.3,
     "baseDps" : 10,
     "damageConfig" : {
