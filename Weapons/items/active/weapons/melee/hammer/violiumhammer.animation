@@ -26,6 +26,12 @@
               "particleEmittersOff" : ["blade"]
             }
           },
+          "extend" : {
+            "frames" : 0,
+            "cycle" : 0.0,
+            "mode" : "transition",
+            "transition" : "active"
+          },
           "active" : {
             "frames" : 5,
             "cycle" : 0.5,
@@ -34,6 +40,17 @@
               "lightsOn" : ["glow"],
               "particleEmittersOn" : ["blade"],
               "persistentSound" : "/sfx/tools/energypickaxe_idle.ogg"
+            }
+          },
+          "retract" : {
+            "frames" : 0,
+            "cycle" : 0.0,
+            "mode" : "transition",
+            "transition" : "inactive",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["blade"],
+              "immediateSound" : "/sfx/tools/energypickaxe_stop2.ogg"
             }
           }
         }
@@ -44,8 +61,7 @@
       "bladefullbright" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 0,
-          "fullbright" : true,
+          "zLevel" : 1,
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0],
           "damageArea" : [[-1, 0.25], [-1, 1.5], [1.5, 1.75], [1.5, 0.0]],
@@ -59,9 +75,19 @@
                 "image" : "<partImage>:unswung"
               }
             },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:swung.1"
+              }
+            },
             "active" : {
               "properties" : {
                 "image" : "<partImage>:swung.<frame>"
+              }
+            },
+            "retract" : {
+              "properties" : {
+                "image" : "<partImage>:swung.1"
               }
             }
           }
@@ -85,9 +111,19 @@
                 "image" : "<partImage>:unswung"
               }
             },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:swung.1"
+              }
+            },
             "active" : {
               "properties" : {
                 "image" : "<partImage>:swung.<frame>"
+              }
+            },
+            "retract" : {
+              "properties" : {
+                "image" : "<partImage>:swung.1"
               }
             }
           }
@@ -168,6 +204,16 @@
             "timeToLive" : 0.4
           }
         }
+      ]
+    },
+    "blade" : {
+      "active" : false,
+      "transformationGroups" : ["weapon"],
+      "offsetRegion" : [-0.5, -0.75, 0.5, 2.0],
+      "emissionRate" : 5,
+      "particles" : [
+        { "particle" : "energyblade"},
+        { "particle" : "energyblade2"}
       ]
     }
   },

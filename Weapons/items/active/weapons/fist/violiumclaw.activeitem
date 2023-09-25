@@ -33,6 +33,7 @@
   
   "scripts" : [ "fistweapon.lua" ],
 
+
   "needsEdgeTrigger" : true,
   "edgeTriggerGrace" : 0.1,
 
@@ -41,6 +42,7 @@
   "comboCooldown" : 0.1,
   "comboFinisherSource" : "/items/active/weapons/fist/combofinishers/nofreezethunderpunch.combofinisher",
   "freezeLimit" : 0,
+  "elementalType" : "electric",
 
   "primaryAbility" : {
     "scripts" : ["/items/active/weapons/fist/punch.lua"],
@@ -51,7 +53,7 @@
     "baseDps" : 10,
     "damageConfig" : {
       "statusEffects" : [ ],
-      "damageSourceKind" : "fist",
+      "damageSourceKind" : "electric",
       "knockback" : [0, 15],
       "timeoutGroup" : "primary",
       "timeout" : 0.1

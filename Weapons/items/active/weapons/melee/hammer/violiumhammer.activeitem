@@ -4,20 +4,18 @@
   "maxStack" : 1,
   "level" : 7,
   "rarity" : "legendary",
-  "description" : "Slam them with cosmic force.
-^yellow;Stun^reset; and apply ^cyan;Minor Vulnerability^reset;.",
+  "description" : "deez nuts",
   "shortdescription" : "Violium Hammer",
   "tooltipKind" : "sword",
   "category" : "hammer",
   "twoHanded" : true,
   "itemTags" : ["weapon","melee","hammer","upgradeableWeapon","violium"],
   "inventoryIcon" : "violiumhammer.png:swung.1",
-  //"collectablesOnPickup" : { "fu_weaponhammer" : "aetheriumhammer" },
-  "animation" : "hammerglow.animation",
+  "animation" : "violiumhammer.animation",
   "animationParts" : {
     "handle" : "",
     "blade" : "violiumhammer.png",
-    "bladefullbright" : "violiumhammer.png"
+    "bladefullbright" : "violiumhammerfullbright.png"
   },
   "animationCustom" : {
     "animatedParts" : {
@@ -38,7 +36,7 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
 
   "elementalType" : "electric",
 
@@ -93,5 +91,5 @@
 
   "critChance" : 4,
   "critBonus" : 7,
-  "builder" : "/items/buildscripts/buildunrandweapon.lua",
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }
