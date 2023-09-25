@@ -1,0 +1,115 @@
+{
+  "animatedParts" : {
+    "stateTypes" : {
+      "attack" : {
+        "default" : "idle",
+        "states" : {
+          "idle" : {},
+          "windup" : {
+            "frames" : 3,
+            "cycle" : 0.1,
+            "mode" : "end"
+          },
+          "extend" : {
+            "frames" : 1,
+            "cycle" : 0.01,
+            "mode" : "end"
+          },
+          "fire" : {}
+        }
+      }
+    },
+
+    "parts" : {
+      "weapon" : {
+        "properties" : {
+          "transformationGroups" : ["weapon"],
+          "centered" : true,
+          "zLevel" : 0
+        },
+
+        "partStates" : {
+          "attack" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:extend.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire"
+              }
+            }
+          }
+        }
+      },
+      "weaponFullbright" : {
+        "properties" : {
+          "transformationGroups" : ["weapon"],
+          "centered" : true,
+          "fullbright" : true,
+          "zLevel" : 1
+        },
+
+        "partStates" : {
+          "attack" : {
+            "idle" : {
+              "properties" : {
+                "image" : "<partImage>:idle"
+              }
+            },
+            "windup" : {
+              "properties" : {
+                "image" : "<partImage>:windup.<frame>"
+              }
+            },
+            "extend" : {
+              "properties" : {
+                "image" : "<partImage>:extend.<frame>"
+              }
+            },
+            "fire" : {
+              "properties" : {
+                "image" : "<partImage>:fire"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "transformationGroups" : {
+    "weapon" : {},
+    "endpoint" : {}
+  },
+  "lights" : {
+    "glow" : {
+      "active" : true,
+      "transformationGroups" : ["weapon"],
+      "position" : [0.0, 0.0],
+      "color" : [90, 50, 120]
+    }
+  }
+
+  "particleEmitters" : {
+    "crack" : {
+      "transformationGroups" : ["endpoint"],
+      "particles" : []
+    }
+  },
+  "sounds" : {
+    "swing" : [ "/sfx/melee/energywhip_swing1.ogg", "/sfx/melee/energywhip_swing2.ogg", "/sfx/melee/energywhip_swing3.ogg" ],
+    "crack" : [ "/sfx/melee/energywhip_impact1.ogg", "/sfx/melee/energywhip_impact2.ogg", "/sfx/melee/energywhip_impact3.ogg" ]
+  }
+}

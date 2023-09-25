@@ -13,43 +13,10 @@
   "itemTags" : ["weapon","whip","upgradeableWeapon","violium","energy"],
 
   "inventoryIcon" : "violiumwhip.png:idle",
-  "animation" : "whip.animation",
+  "animation" : "violiumwhip.animation",
   "animationParts" : {
     "weapon" : "violiumwhip.png",
 	  "weaponFullbright" : "violiumwhipfullbright.png"
-  },
-  "animationCustom" : {
-    "animatedParts" : {
-      "stateTypes" : {
-        "attack" : {
-          "default" : "idle",
-          "states" : {
-            "idle" : {
-              "properties" : {
-                "lightsOn" : ["glow"]
-              }
-            },
-            "windup" : {
-              "frames" : 3,
-              "cycle" : 0.1,
-              "mode" : "end"
-            }
-          }
-        }
-      }
-    },
-    "particleEmitters" : { "crack" : { "particles" : [ ]}},
-    "sounds" : {
-      "swing" : [ "/sfx/melee/energywhip_swing1.ogg", "/sfx/melee/energywhip_swing2.ogg", "/sfx/melee/energywhip_swing3.ogg" ],
-      "crack" : [ "/sfx/melee/energywhip_impact1.ogg", "/sfx/melee/energywhip_impact2.ogg", "/sfx/melee/energywhip_impact3.ogg" ]
-    },
-    "lights" : {
-      "glow" : {
-        "position" : [0, 2.0],
-        "color" : [90, 50, 120],
-        "transformationGroups" : ["weapon"]
-      }
-    }
   },
 
   "chain" : {
