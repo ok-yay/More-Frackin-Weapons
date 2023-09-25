@@ -104,6 +104,8 @@
       }
     }
   },
-
+  "comboFinisher" : {
+    "freezeTime" : 0.0
+  },
   "builder" : "/items/buildscripts/buildfist.lua"
 }
