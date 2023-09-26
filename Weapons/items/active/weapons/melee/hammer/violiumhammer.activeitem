@@ -42,7 +42,7 @@
 
   "primaryAbilityType" : "hammersmash",
   "primaryAbility" : {
-    "fireTime" : 0.72,
+    "fireTime" : 1.0,
     "baseDps" : 11.5,
     "damageConfig" : {
       "statusEffects" : [ "defenseboostneg20" ],
@@ -50,15 +50,15 @@
     },
     "stances" : {
       "idle" : {
-        "armRotation" : -10,
-        "weaponRotation" : -10,
-        "weaponOffset" : [0.5, 1.75]
+        "armRotation" : -90,
+        "weaponRotation" : 0,
+        "weaponOffset" : [1.0, 1.75]
       },
       "windup" : {
         "duration" : 0.8,
         "armRotation" : 90,
         "weaponRotation" : -10,
-        "weaponOffset" : [0.4, 1.75],
+        "weaponOffset" : [0.6, 1.75],
 
         // Windup animation
         "idleHammerAngle" : -10,
@@ -87,7 +87,17 @@
   },
 
   "altAbilityType" : "elementalaura",
-  "altAbility" : { },
+  "altAbility" : { 
+    "stances" : {
+      "windup" : {
+        "weaponOffset" : [1.0, 1.75]
+      },
+      "fire" : {
+        "weaponOffset" : [1.0, 1.75]
+      },
+    }
+
+  },
 
   "critChance" : 4,
   "critBonus" : 7,
