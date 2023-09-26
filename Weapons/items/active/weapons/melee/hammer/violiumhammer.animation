@@ -54,6 +54,44 @@
             }
           }
         }
+      },
+      "bladefullbright" : {
+        "default" : "inactive",
+        "states" : {
+          "inactive" : {
+            "properties" : {
+              "lightsOff" : ["glow"],
+              "particleEmittersOff" : ["blade"]
+            }
+          },
+          "extend" : {
+            "frames" : 0,
+            "cycle" : 0.0,
+            "mode" : "transition",
+            "transition" : "active"
+          },
+          "active" : {
+            "frames" : 5,
+            "cycle" : 0.5,
+            "mode" : "loop",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["blade"],
+              "persistentSound" : "/sfx/tools/energypickaxe_idle.ogg"
+            }
+          },
+          "retract" : {
+            "frames" : 0,
+            "cycle" : 0.0,
+            "mode" : "transition",
+            "transition" : "inactive",
+            "properties" : {
+              "lightsOn" : ["glow"],
+              "particleEmittersOn" : ["blade"],
+              "immediateSound" : "/sfx/tools/energypickaxe_stop2.ogg"
+            }
+          }
+        }
       }
     },
 
@@ -62,6 +100,7 @@
         "properties" : {
           "centered" : true,
           "zLevel" : 1,
+          "fullbright" : true,
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0],
           "damageArea" : [[-1, 0.25], [-1, 1.5], [1.5, 1.75], [1.5, 0.0]],
@@ -69,7 +108,7 @@
         },
     
         "partStates" : {
-          "blade" : {
+          "bladefullbright" : {
             "inactive" : {
               "properties" : {
                 "image" : "<partImage>:unswung"
@@ -96,8 +135,8 @@
       "blade" : {
         "properties" : {
           "centered" : true,
-          "zLevel" : 0,
           "fullbright" : true,
+          "zLevel" : 0,
           "transformationGroups" : ["weapon"],
           "rotationCenter" : [0, 0],
           "damageArea" : [[-1, 0.25], [-1, 1.5], [1.5, 1.75], [1.5, 0.0]],
@@ -113,7 +152,7 @@
             },
             "extend" : {
               "properties" : {
-                "image" : "<partImage>:swung.1"
+                "image" : "<partImage>:unswung"
               }
             },
             "active" : {

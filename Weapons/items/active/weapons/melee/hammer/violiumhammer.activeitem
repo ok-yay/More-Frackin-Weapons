@@ -36,7 +36,7 @@
     }
   },
 
-  "scripts" : ["/items/active/weapons/melee/energymeleeweapon.lua"],
+  "scripts" : ["/items/active/weapons/melee/hammer/violiumhammer.lua"],
 
   "elementalType" : "electric",
 
@@ -46,7 +46,7 @@
     "baseDps" : 11.5,
     "damageConfig" : {
       "statusEffects" : [ "defenseboostneg20" ],
-       "damageSourceKind" : "violiumhammer"
+       "damageSourceKind" : "electric"
     },
     "stances" : {
       "idle" : {
