@@ -1,10 +1,10 @@
 {
   "itemName" : "violiumhammer",
-  "price" : 1200,
+  "price" : 700,
   "maxStack" : 1,
-  "level" : 7,
-  "rarity" : "legendary",
-  "description" : "deez nuts",
+  "level" : 5,
+  "rarity" : "rare",
+  "description" : "A powerful hammer of pure energy.",
   "shortdescription" : "Violium Hammer",
   "tooltipKind" : "sword",
   "category" : "hammer",
@@ -43,9 +43,8 @@
   "primaryAbilityType" : "hammersmash",
   "primaryAbility" : {
     "fireTime" : 0.72,
-    "baseDps" : 11.5,
+    "baseDps" : 8.5,
     "damageConfig" : {
-      "statusEffects" : [ "defenseboostneg20" ],
        "damageSourceKind" : "violiumhammer"
     },
     "stances" : {
