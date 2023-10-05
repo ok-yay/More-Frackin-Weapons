@@ -8,7 +8,8 @@
         "charging.10", "loop.1", "loop.2"
       ]
     ],
-    "aliases" : {
+  },
+  "aliases" : {
       "charging.1" : "discharge.10",
       "charging.2" : "discharge.9",
       "charging.3" : "discharge.8",
@@ -20,5 +21,4 @@
       "charging.9" : "discharge.2",
       "charging.10" : "discharge.1"
     }
-  }
 }
