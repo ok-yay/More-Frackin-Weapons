@@ -11,7 +11,7 @@
   "itemTags" : ["weapon","staff","tritanium", "upgradeableWeapon"],
   "tooltipKind" : "staff",
 
-  "animation" : "/items/active/weapons/staff/orestaffs/violiumstaff.animation",
+  "animation" : "violiumstaff.animation",
   "animationParts" : {
     "staff" : "violiumstaff.png",
     "stone" : "",
