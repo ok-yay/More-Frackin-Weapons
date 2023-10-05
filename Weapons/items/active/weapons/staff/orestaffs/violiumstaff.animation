@@ -24,7 +24,7 @@
           },
           "discharge" : {
             "frames" : 10,
-            "cycle" : 1.5,
+            "cycle" : 0.3,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -64,11 +64,6 @@
 
         "partStates" : {
           "charge" : {
-            "idle" : {
-              "properties" : {
-                "lightsOff" : ["glow"]
-              }
-            },
             "charge" : {
               "properties" : {
                 "image" : "<partImage>:charging.<frame>",
@@ -87,7 +82,9 @@
             },
             "discharge" : {
               "properties" : {
-                "image" : "<partImage>:discharge.<frame>"
+                "image" : "<partImage>:discharge.<frame>",
+                "lightsOff" : ["glow"]
+
               }
             }
           }
