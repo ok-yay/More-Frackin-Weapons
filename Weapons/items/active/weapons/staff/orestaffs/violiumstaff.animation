@@ -68,18 +68,16 @@
               "properties" : {
                 "lightsOff" : ["glow"]
               }
-            }
+            },
             "charge" : {
               "properties" : {
                 "image" : "<partImage>:charging.<frame>",
                 "lightsOn" : ["glow"]
-
               }
             },
             "spark" : {
               "properties" : {
-                "image" : "<partImage>:loop.2",
-
+                "image" : "<partImage>:loop.2"
               }
             },
             "charged" : {
