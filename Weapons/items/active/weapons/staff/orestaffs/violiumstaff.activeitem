@@ -11,25 +11,13 @@
   "itemTags" : ["weapon","staff","tritanium", "upgradeableWeapon"],
   "tooltipKind" : "staff",
 
-  "animation" : "/items/active/weapons/staff/staff.animation",
+  "animation" : "/items/active/weapons/staff/orestaffs/violiumstaff.animation",
   "animationParts" : {
     "staff" : "violiumstaff.png",
     "stone" : "",
     "chargeEffect" : "violiumstaffglow.png"
   },
-  "animationCustom" : {
-    
-    "lights" : {
-      "glow" : {
-        "color" : [55, 34, 122]
-      }
-    },
-    "particleEmitters" : {
-      "electriccharge" : {
-        "offsetRegion" : [-0.5, 1.75, 0.5, 3.25]
-      }
-    }
-  },
+  "animationCustom" : {},
 
   "inventoryIcon" : "violiumstaffcharged.png",
 
