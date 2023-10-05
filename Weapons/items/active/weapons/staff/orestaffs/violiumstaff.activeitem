@@ -50,7 +50,7 @@
       "weaponOffset" : [0.0, 2.0],
 
       "allowRotate" : false,
-      "allowFlip" : false
+      "allowFlip" : true
     },
     "discharge" : {
       "duration" : 0.5,
@@ -60,24 +60,25 @@
       "weaponOffset" : [0.0, 2.0],
 
       "allowRotate" : false,
-      "allowFlip" : false
+      "allowFlip" : true
     },
     "cooldown" : {
       "duration" : 0.5,
       "armRotation" : -45,
       "weaponRotation" : 0,
       "twoHanded" : true,
+      "weaponOffset" : [0.0, 2.0],
 
       "allowRotate" : false,
-      "allowFlip" : false
+      "allowFlip" : true
     }
   },
 
   "elementalType" : "electric",
 
-  "primaryAbilityType" : "FUCKYOU",
+  "primaryAbilityType" : "aetherwand",
   "primaryAbility" : {},
-  "altAbilityType" : "PLEASE",
+  "altAbilityType" : "aetherwand",
   "altAbility" : {},
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
