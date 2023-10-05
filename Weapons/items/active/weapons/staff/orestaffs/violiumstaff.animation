@@ -24,7 +24,7 @@
           },
           "discharge" : {
             "frames" : 10,
-            "cycle" : 0.3,
+            "cycle" : 1.5,
             "mode" : "transition",
             "transition" : "idle"
           }
@@ -57,8 +57,8 @@
         "properties" : {
           "zLevel" : 2,
           "fullbright" : true,
-          "centered" : false,
-          "offset" : [0.0, -5.0],
+          "centered" : true,
+          "offset" : [0.0, 0.0],
           "transformationGroups" : ["weapon"]
         },
 
