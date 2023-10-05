@@ -28,6 +28,7 @@
       "armRotation" : -90,
       "weaponRotation" : 0,
       "twoHanded" : false,
+      "weaponOffset" : [0.0, 2.0],
 
       "allowRotate" : false,
       "allowFlip" : true
@@ -37,6 +38,7 @@
       "armRotation" : 20,
       "weaponRotation" : -20,
       "twoHanded" : true,
+      "weaponOffset" : [0.0, 2.0],
 
       "allowRotate" : false,
       "allowFlip" : true
@@ -45,6 +47,7 @@
       "armRotation" : 20,
       "weaponRotation" : -20,
       "twoHanded" : true,
+      "weaponOffset" : [0.0, 2.0],
 
       "allowRotate" : false,
       "allowFlip" : false
@@ -54,6 +57,7 @@
       "armRotation" : 20,
       "weaponRotation" : -20,
       "twoHanded" : true,
+      "weaponOffset" : [0.0, 2.0],
 
       "allowRotate" : false,
       "allowFlip" : false
@@ -71,9 +75,9 @@
 
   "elementalType" : "electric",
 
-  "primaryAbilityType" : "aetherwand",
+  "primaryAbilityType" : "FUCKYOU",
   "primaryAbility" : {},
-  "altAbilityType" : "elementalaura",
+  "altAbilityType" : "PLEASE",
   "altAbility" : {},
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
